@@ -1,0 +1,367 @@
+/* css applied to whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: roboto, arial, sans-serif;
+  text-decoration: none;
+  min-height: 140vh;
+  background: #f1f3f5;
+}
+.none {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.fa {
+  margin: 0;
+}
+.fa-angle-down {
+  font-weight: lighter;
+  margin: 0;
+}
+.fa-user {
+  border-radius: 50%;
+}
+/* flipkart heading style and color ,position  */
+.flipkart_headingclass {
+  background-color: #2874ef;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+/* whole navbar style and color ,position  */
+.nav_container {
+  align-items: center;
+  max-width: 1248px;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  left: 71px;
+  justify-content: center;
+}
+.logo {
+  flex-direction: column;
+  width: fit-content;
+}
+/* hover effect on explore plud effect  */
+.explore:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.explore {
+  cursor: pointer;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 11px;
+  font-style: italic;
+  margin-top: -5px;
+}
+.flipkart_logo img {
+  width: 75px;
+}
+
+.pluslan {
+  color: #eedc12;
+  margin: 0px 2px;
+  font-weight: bold;
+}
+.searchbar_container {
+  min-width: 304px;
+  width: 708px;
+}
+.search_box {
+  max-width: 564px;
+  width: 100%;
+  margin-left: 10px;
+  box-shadow: 0px 2px 4px 0 rgb(0 0 0 /23%);
+}
+.search_box {
+  outline: none;
+  padding: 0px 16px;
+  height: 36px;
+  border-radius: 2px 0 0 2px;
+  border: 0;
+  width: 100%;
+  font-size: 14px;
+}
+.btn_search {
+  background: #ffffff;
+  border: 1px solid white;
+  padding: 4px 12px 4px 8px;
+  width: 44px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 0px 2px 2px 0px;
+  color: #2874ef;
+  font-size: 19px;
+}
+.login {
+  position: relative;
+  left: 45px;
+}
+/* login button  style and color ,position  */
+.login_btn {
+  color: #2874ef;
+  border-radius: 2px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  letter-spacing: 1px;
+  height: 32px;
+  padding: 6px 40px;
+  font-weight: bold;
+  margin: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+/* more,cart  button  style and color ,position  */
+.more,
+.cart {
+  position: relative;
+  left: 64px;
+  margin: 7px 20px;
+}
+.more_lan,
+.cart_lan {
+  color: white;
+  font-weight: bold;
+  margin: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+}
+/* heading categories  style and color ,position  */
+.heading_categories {
+  background: #ffffff;
+  justify-content: center;
+  min-height: 112px;
+  border-bottom: 2px solid lightgray;
+}
+.heading_category_list {
+  list-style: none;
+  max-width: 1280px;
+  justify-content: space-between;
+  width: 100%;
+}
+.heading_category_items {
+  padding: 12px 8px;
+  cursor: pointer;
+  text-align: center;
+}
+/* hover effect on  heading categories */
+.heading_category_items:hover {
+  color: #2874ef;
+}
+.cat_image {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 3px;
+}
+.heading_item_name {
+  font-size: 14px;
+  font-weight: 550;
+}
+.pointer {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  position: relative;
+}
+.login_dropdown {
+  position: relative;
+}
+.more_dropdown {
+  position: relative;
+  padding: 0.5em 5em 0.5em 5em;
+}
+/* login , more dropdown list   style and color ,position  */
+.login_dropdown_list,
+.more_dropdown_list {
+  position: absolute;
+  list-style: none;
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding: 5px;
+  width: max-content;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 /20%);
+  min-width: 240px;
+  transform: translate(-55px);
+}
+.more_dropdown,
+.login_dropdownlist {
+  padding: 15px 30px;
+  padding-top: 1px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login_dropdownlist:last-child,
+.more_dropdown:last-child {
+  border-bottom: none;
+}
+/* login first element has more padding  style */
+.login_dropdownlist:first-child {
+  padding: 10px;
+}
+
+.login_dropdownlist:first-child:hover {
+  background: #fff;
+}
+.new_login {
+  font-weight: bold;
+}
+.signin {
+  justify-content: space-between;
+  font-size: 14px;
+}
+.sign_up {
+  text-decoration: none;
+  color: #2874ef;
+}
+.more:hover .more_lan {
+  position: relative;
+}
+.more_pointer {
+  left: 40%;
+}
+.more_icon {
+  width: 25px;
+  padding: 8px;
+  color: #2874ef;
+}
+.login:hover .login_dropdown,
+.more:hover .more_dropdown {
+  display: block;
+}
+#moreicon {
+  margin-left: 6px;
+}
+#carticon {
+  margin-right: 6px;
+}
+.mainflex {
+  display: flex;
+  flex-flow: row wrap;
+}
+.card {
+  height: 298px;
+  width: 180px;
+  margin: 18px;
+}
+.cardDiv > div {
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  width: max-content;
+}
+.posterDiv {
+  width: 65%;
+}
+.poster {
+  padding: 5px;
+  margin: 5px;
+  height: 390px;
+  width: 144%;
+}
+.deals {
+  display: flex;
+}
+/* deals-leftoffer style and color ,position  */
+.deals-leftoffer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 /20%);
+  background-color: #ffffff;
+}
+/* deals-rightoffer style and color ,position  */
+.deals-rightoffer {
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 /23%);
+  width: fit-content;
+  padding: 5px;
+  margin-left: 8px;
+}
+.deals-heading {
+  border: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.73em 0em 0.5em 0.83em;
+  margin-bottom: -6px;
+  margin-top: 12px;
+}
+.heading {
+  color: #212121;
+  font-weight: bold;
+  font-size: 18px;
+}
+.angleright {
+  flex-direction: column-reverse;
+  font-weight: bold;
+  padding: 7px;
+  margin: 10px;
+  border: 2px solid white;
+  width: 44px;
+  height: 95px;
+  display: flex;
+  float: right;
+  margin-left: 195px;
+  margin-bottom: 113px;
+  margin-top: -165px;
+  align-items: center;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 /23%);
+}
+/* view button  style and color ,position  */
+.viewbutton {
+  display: flex;
+  margin-right: 18px;
+  margin-bottom: 12px;
+  height: 40px;
+  width: 90px;
+}
+.secondsection {
+  width: 100%;
+  margin-right: 70px;
+  margin-top: 15px;
+  display: flex;
+}
+/* second arrow style and color ,position  */
+.angleright-second {
+  flex-direction: column-reverse;
+  font-weight: bold;
+  padding: 7px;
+  margin: 10px;
+  border: 2px solid white;
+  width: 44px;
+  height: 95px;
+  display: flex;
+  float: right;
+  margin-left: 227px;
+  margin-bottom: 113px;
+  margin-top: -177px;
+  align-items: center;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 /23%);
+}
+/* clock style and color ,position  */
+.clockdigit {
+  color: #7f7f7f;
+  display: flex;
+  margin-right: 1067px;
+  font-size: 16px;
+  vertical-align: top;
+  padding-top: 2px;
+}
